@@ -50,7 +50,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const MediaFinal = calculaMediaFinal();
 
-    document.getElementById('Media-Final=Valor').innerHTML = MediaFinal.toFixed(2); // Corrigir o ID
+    document.getElementById('Media-Final=Valor').innerHTML = MediaFinal.toFixed(2); // Corrigir o ID/ Limitar casas decimais
     document.getElementById('Media-Final=Resultado').innerHTML = MediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 
 }
